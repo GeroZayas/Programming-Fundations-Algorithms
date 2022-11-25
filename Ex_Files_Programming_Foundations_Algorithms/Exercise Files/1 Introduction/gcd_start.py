@@ -9,7 +9,8 @@ def gcd(a, b) -> int:
     top_num: int = min(a, b)
     # print("this is top num", top_num)
     x = top_num
-    if a % b or b % a
+    if a % b == 0 or b % a == 0:
+        return top_num
     while not found:
         x -= 1
         if a % x == 0 and b % x == 0:
@@ -19,4 +20,3 @@ def gcd(a, b) -> int:
 
 # try out the function with a few examples
 print(gcd(60, 12))  # should be 12
-
